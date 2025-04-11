@@ -1,6 +1,6 @@
 package com.coded.spring.ordering.controller
 
-import com.coded.spring.ordering.model.User
+import com.coded.spring.ordering.repository.User
 import com.coded.spring.ordering.service.UserService
 import org.springframework.web.bind.annotation.*
 

@@ -1,6 +1,6 @@
 package com.coded.spring.ordering.service
 
-import com.coded.spring.ordering.model.Item
+import com.coded.spring.ordering.repository.Item
 import com.coded.spring.ordering.repository.ItemRepository
 import com.coded.spring.ordering.repository.OrderRepository
 import org.springframework.stereotype.Service
