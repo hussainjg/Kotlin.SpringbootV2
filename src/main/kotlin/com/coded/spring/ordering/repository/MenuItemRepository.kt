@@ -1,7 +1,6 @@
 package com.coded.spring.ordering.repository
 
-
-import com.coded.spring.ordering.model.Order
+import com.coded.spring.ordering.model.MenuItem
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface OrderRepository : JpaRepository<Order, Long>
+interface MenuItemRepository : JpaRepository<MenuItem, Long>
