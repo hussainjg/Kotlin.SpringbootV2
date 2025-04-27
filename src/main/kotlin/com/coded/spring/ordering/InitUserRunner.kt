@@ -9,7 +9,7 @@ import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.security.crypto.password.PasswordEncoder
 
-@SpringBootApplication
+// @SpringBootApplication
 class InitUserRunner {
     @Bean
     fun initUsers(userRepository: UserRepository, passwordEncoder: PasswordEncoder) = CommandLineRunner {

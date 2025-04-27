@@ -1,7 +1,9 @@
 package com.coded.spring.ordering.controller
 
+import com.coded.spring.ordering.model.Item
 import com.coded.spring.ordering.model.Order
 import com.coded.spring.ordering.service.OrderService
+import org.springframework.http.HttpEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -17,4 +19,5 @@ class OrderController(private val orderService: OrderService) {
     fun getAllOrders(): List<Order> {
         return orderService.getAllOrders()
     }
+
 }

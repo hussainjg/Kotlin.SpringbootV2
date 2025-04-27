@@ -29,13 +29,15 @@ class SecurityConfig(
         http.csrf { it.disable() }
             .authorizeHttpRequests {
                 it
-                    .requestMatchers("/auth/**").permitAll()
                     .requestMatchers("/users/create").permitAll()
+                    .requestMatchers("/auth/**").permitAll()
+                    .requestMatchers("/hello").permitAll()
+                    .requestMatchers("/users/getAll").permitAll()
                     .requestMatchers("/users/**").hasRole("ADMIN")
                     .requestMatchers("/profile/**").authenticated()
                     .requestMatchers("/menu/**").authenticated()
 
-                    .anyRequest().authenticated()
+                    .anyRequest().permitAll()
             }
             .sessionManagement {
                 it.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
